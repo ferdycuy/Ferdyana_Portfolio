@@ -93,3 +93,17 @@ themeButton.addEventListener('click', () => {
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
+
+
+// see more project
+  const seeMoreBtn = document.getElementById('seeMoreBtn');
+  const extraProjects = document.querySelectorAll('.extra-project');
+  let isShown = false;
+
+  seeMoreBtn.addEventListener('click', () => {
+    isShown = !isShown;
+    extraProjects.forEach(project => {
+      project.style.display = isShown ? 'block' : 'none';
+    });
+    seeMoreBtn.textContent = isShown ? 'See less projects' : 'See more projects';
+  });

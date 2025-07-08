@@ -13,17 +13,32 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 250;
+  /* --first-hue: 250;
   --sat: 66%;
   --lig: 69%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --container-color: hsl(var(--second-hue), 32%, 12%); */
+
+--first-hue: 220; /* biru utama */
+--second-hue: 210; /* biru keabu-abuan / base */
+
+--sat: 85%;
+--lig: 60%;
+
+--first-color: hsl(var(--first-hue), var(--sat), var(--lig)); /* biru muda segar */
+--first-color-alt: hsl(var(--first-hue), var(--sat), 52%); /* variasi biru sedikit lebih tua */
+--title-color: hsl(var(--second-hue), 15%, 95%); /* hampir putih */
+--text-color: hsl(var(--second-hue), 8%, 75%); /* abu terang */
+--text-color-light: hsl(var(--second-hue), 4%, 60%);
+--body-color: hsl(var(--second-hue), 48%, 10%); /* biru tua gelap */
+--container-color: hsl(var(--second-hue), 30%, 15%); /* kontras ringan */
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -327,7 +342,7 @@ body.light-theme{
 .home__handle {
   justify-self: center;
   width: 210px;
-  height: 250px;
+  height: 230px;
   background: linear-gradient(180deg,
               hsla(var(--first-hue), var(--sat), var(--lig), 1),
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
@@ -340,7 +355,8 @@ body.light-theme{
 }
 
 .home__img {
-  width: 210px;
+  width: 300px;
+  margin-left: 15px;
 }
 
 .home__buttons {
@@ -959,6 +975,19 @@ body.light-theme{
 
   .services__modal-description {
     padding: 0 3.5rem;
+  }
+
+  .services__modal-link {
+    color: var(--first-color);
+    transition: color 0.3s;
+  }
+  
+  .services__modal-link:visited {
+    color: var(--first-color);
+  }
+  
+  .services__modal-link:hover {
+    color: var(--first-color-alt);
   }
 
   .contact__container {
