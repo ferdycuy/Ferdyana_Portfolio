@@ -1,9 +1,9 @@
 const myProjects = [
     {
         title: "Nazmalogy Company Profile & Community",
-        client: "nazmalogy.com",
+        client: "PT.Nazmalogy Loka Lastari",
         img: "assets/img/nazmalogy.png", 
-        tech: ["php", "laravel", "nodejs", "tailwindcss", "mysql", "livewire", "nginx"],
+        tech: ["php", "laravel", "nodejs", "tailwindcss", "mysql", "notion","github", "nginx","linux"],
         demo: "https://nazmalogy.com",
         isPrivate: false,
         desc: "A dynamic Company Profile website equipped with a community interaction platform. This site serves as a central hub for company services and an active communication space for users.",
@@ -33,9 +33,9 @@ const myProjects = [
     },
     {
         title: "Publisher Nazmalogy",
-        client: "publisher.nazmalogy.com",
+        client: "PT.Nazmalogy Loka Lastari",
         img: "assets/img/publisher.png", 
-        tech: ["php", "laravel", "javascript", "nodejs", "tailwindcss", "mysql"],
+        tech: ["php", "laravel", "javascript", "nodejs", "tailwindcss", "mysql", "notion","github", "nginx","linux"],
         demo: "https://publisher.nazmalogy.com",
         isPrivate: false,
         desc: "A professional book publishing service platform. This website enables authors to register their manuscripts and transparently monitor the publishing process through an integrated system.",
